@@ -1,0 +1,26 @@
+.quickStart {
+    padding:40px 0px;
+	background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+	position: relative;
+	.qBox {
+		text-align: center;
+
+		h2 {
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 48px;
+			text-align: center;
+			color: white;
+		}
+		button {
+			padding: 12px 24px;
+			width: 200px;
+			height: 48px;
+			background: #005ae2;
+			border-radius: 100px;
+            border: none;
+            color:white;
+			margin-top: 16px;
+		}
+	}
+}

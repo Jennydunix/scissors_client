@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  max-width:100vw;
+}
+
+.container {
+  margin: 0 auto;
+  height: auto;
+  padding: 0px 8px;
+}
+
+.etext {
+  font-size: 1.2em;
+  color: rgba(128, 128, 128, 0.542);
+  text-align: center;
+}

@@ -1,0 +1,124 @@
+header {
+	width: 100%;
+	padding: 22px 0px;
+	overflow-x: hidden;
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.logo {
+			display: flex;
+			align-items: center;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 32px;
+			color: #0065fe;
+			text-decoration: none;
+		}
+		
+		.nav-links{
+			display: flex;
+			flex-direction: column;
+			position:fixed;
+			width:100vw;
+			height:calc(100vh - 84px);
+			background: #FFFFFF;
+			top:84px;
+			left:100%;
+			z-index: 999;
+			gap: 30px;
+
+			@media screen and (min-width:769px) {
+				flex-direction:row;
+				position: relative;
+				height:auto;
+				width:auto;
+				left:0%;
+				top:0px;
+			}
+
+			ul {
+				display: flex;
+				flex-direction:column;
+				align-items: center;
+				list-style: none;
+				gap: 30px;
+
+				@media screen and (min-width:769px) {
+					flex-direction:row;
+				}
+				li {
+					font-size: 20px;
+
+					@media screen and (min-width:769px) {
+						font-size: 16px;
+					}
+					&.active {
+						color: #0065fe;
+					}
+					
+				}
+				a{
+					color: inherit;
+					text-decoration: none;
+					&.action {
+						background-color: #0065fe;
+						color: white;
+						padding: 10px 20px;
+						border-radius: 20px;
+					}
+				}
+			}
+			.cuurentUserDetail {
+				display: flex;
+				flex-direction:column;
+				align-items: center;
+				list-style: none;
+				gap: 30px;
+
+				@media screen and (min-width:769px) {
+					flex-direction:row;
+				}
+				a {
+					color: inherit;
+					text-decoration: none;
+				}
+				.logout {
+					color: red;
+					padding: 10px 20px;
+					border-radius: 20px;
+					border: 1px solid red;
+					background-color: transparent;
+					&:hover{
+						background-color: red;
+						color: white;
+					}
+				}
+			}
+		}
+
+		.show{
+			left:0%;
+		}
+	}
+}
+
+
+.burger{
+	width:40px;
+	height:40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@media screen and (min-width:769px) {
+		display: none;
+	}
+
+	.line {
+		width:95%;
+		height:3px;
+		background-color: #000000;
+	}
+}
